@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Star, Quote } from 'lucide-react'
+import { Star, Quote } from "lucide-react"
+import Image from "next/image"
 
 const testimonials = [
   {
@@ -9,7 +10,7 @@ const testimonials = [
     content:
       "Working with Narayan has been an incredible journey. His creativity, precision, and deep understanding of flavors were instrumental in our victory. His ability to blend traditional Nepalese elements with modern techniques is truly remarkable.",
     rating: 5,
-    image: "/images/testimonials/person1.png",
+    image: "/placeholder.svg?height=100&width=100",
   },
   {
     id: 2,
@@ -18,7 +19,7 @@ const testimonials = [
     content:
       "Chef Narayan created the most exquisite dessert table for our corporate gala. His pastries were not only visually stunning but offered unique flavor combinations that our guests are still talking about months later.",
     rating: 5,
-    image: "/images/testimonials/person2.png",
+    image: "/placeholder.svg?height=100&width=100",
   },
   {
     id: 3,
@@ -27,7 +28,7 @@ const testimonials = [
     content:
       "Taking a pastry masterclass with Chef Narayan was an eye-opening experience. He has a gift for teaching complex techniques in an approachable way, and his passion for pastry is truly infectious.",
     rating: 5,
-    image: "/images/testimonials/person3.png",
+    image: "/placeholder.svg?height=100&width=100",
   },
 ]
 
@@ -45,12 +46,14 @@ export function Testimonials() {
                 <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
               ))}
             </div>
-            <p className="text-gray-700 mb-8 relative z-10">"{testimonial.content}"</p>
+            <p className="text-gray-700 mb-8 relative z-10">&ldquo;{testimonial.content}&rdquo;</p>
             <div className="flex items-center gap-4">
-              <img
+              <Image
                 src={testimonial.image || "/placeholder.svg"}
                 alt={testimonial.name}
-                className="w-12 h-12 rounded-full object-cover border-2 border-amber-200"
+                width={48}
+                height={48}
+                className="rounded-full object-cover border-2 border-amber-200"
               />
               <div>
                 <p className="font-semibold">{testimonial.name}</p>

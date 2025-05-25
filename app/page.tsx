@@ -34,7 +34,7 @@ export default function Home() {
             backgroundBlendMode: "overlay",
           }}
         />
-        <div className="container relative z-10 px-4 md:px-6 flex flex-col items-center text-center">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl relative z-10 flex flex-col items-center text-center">
           <div className="inline-block p-3 rounded-full bg-white/10 backdrop-blur-sm mb-6">
             <ChefHat className="h-14 w-14 text-amber-400" />
           </div>
@@ -60,7 +60,7 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="py-24 bg-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <SafeImage
@@ -119,17 +119,17 @@ export default function Home() {
 
       {/* Philosophy Section */}
       <section className="py-20 bg-amber-50">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-amber-100 text-amber-800 font-medium text-sm mb-6">
               My Culinary Philosophy
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">Food is Art that Tells a Story</h2>
             <p className="text-xl text-gray-700 mb-10 leading-relaxed">
-              "I believe that food is not just nourishment but an art form that tells a story. My creations are inspired
-              by my roots in Nepal, incorporating traditional flavors and techniques into contemporary desserts. Winning
-              the Great British Bake Off: The Professionals has been a milestone in my career, and I am committed to
-              pushing the boundaries of culinary innovation."
+              &ldquo;I believe that food is not just nourishment but an art form that tells a story. My creations are
+              inspired by my roots in Nepal, incorporating traditional flavors and techniques into contemporary
+              desserts. Winning the Great British Bake Off: The Professionals has been a milestone in my career, and I
+              am committed to pushing the boundaries of culinary innovation.&rdquo;
             </p>
             <div className="flex justify-center">
               <div className="h-1 w-20 bg-amber-400 rounded-full"></div>
@@ -140,7 +140,7 @@ export default function Home() {
 
       {/* Journey Section */}
       <section id="journey" className="py-24 bg-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-amber-100 text-amber-800 font-medium text-sm mb-4">
               My Path
@@ -157,7 +157,7 @@ export default function Home() {
 
       {/* Featured Dishes */}
       <section id="menu" className="py-24 bg-stone-100">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-amber-100 text-amber-800 font-medium text-sm mb-4">
               Culinary Creations
@@ -174,7 +174,7 @@ export default function Home() {
 
       {/* Awards Section */}
       <section id="awards" className="py-24 bg-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-amber-100 text-amber-800 font-medium text-sm mb-4">
               Recognition
@@ -190,7 +190,7 @@ export default function Home() {
 
       {/* Services Section */}
       <section id="services" className="py-24 bg-stone-100">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-amber-100 text-amber-800 font-medium text-sm mb-4">
               What I Offer
@@ -207,7 +207,7 @@ export default function Home() {
 
       {/* Testimonials */}
       <section className="py-24 bg-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-amber-100 text-amber-800 font-medium text-sm mb-4">
               Client Experiences
@@ -223,11 +223,11 @@ export default function Home() {
 
       {/* Contact Section */}
       <section id="contact" className="py-24 bg-stone-100">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="grid md:grid-cols-2 gap-16 items-end">
             <div>
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-amber-100 text-amber-800 font-medium text-sm mb-4">
-                Let's Connect
+                Let&rsquo;s Connect
               </div>
               <h2 className="text-4xl font-bold tracking-tight mb-6">Get in Touch</h2>
               <p className="text-gray-700 mb-10 text-lg">
@@ -264,7 +264,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Enhanced Social Media Section */}
               {/* Compact Social Media Section */}
               <div className="bg-gradient-to-br from-amber-50 to-amber-100 p-4 rounded-xl shadow-sm border border-amber-200">
                 <h4 className="font-semibold text-base mb-3 text-gray-800">Connect With Me</h4>
@@ -413,7 +412,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-12 bg-gray-900 text-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-3 mb-6 md:mb-0">
               <div className="p-2 rounded-full bg-amber-500/20">
@@ -421,7 +420,6 @@ export default function Home() {
               </div>
               <span className="text-xl font-bold">Chef Narayan Shrestha</span>
             </div>
-            {/* Replace the social media section in footer with: */}
             <div></div>
           </div>
           <div className="border-t border-gray-800 my-8"></div>

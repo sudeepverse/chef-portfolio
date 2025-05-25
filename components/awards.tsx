@@ -1,4 +1,4 @@
-import { Award, Star, Trophy, Tv } from 'lucide-react'
+import { Award, Star, Trophy, Medal, Crown } from "lucide-react"
 
 type AwardProps = {
   year: string
@@ -6,7 +6,7 @@ type AwardProps = {
   organization: string
   description: string
   featured?: boolean
-  image?: string
+  icon?: string
 }
 
 const awards: AwardProps[] = [
@@ -17,7 +17,7 @@ const awards: AwardProps[] = [
     description:
       "Made history as part of the first South Asian team to win this globally renowned competition, representing Intercontinental London – The O2.",
     featured: true,
-    image: "/images/awards/award1.png",
+    icon: "trophy",
   },
   {
     year: "2023",
@@ -25,7 +25,7 @@ const awards: AwardProps[] = [
     organization: "International Culinary Federation",
     description: "Recognized for outstanding contributions to pastry arts and innovative dessert creations.",
     featured: true,
-    image: "/images/awards/award2.png",
+    icon: "medal",
   },
   {
     year: "2022",
@@ -39,7 +39,7 @@ const awards: AwardProps[] = [
     year: "2021",
     title: "Rising Star in Pastry",
     organization: "UK Hospitality Awards",
-    description: "Acknowledged as an emerging talent in the UK's competitive pastry scene.",
+    description: "Acknowledged as an emerging talent in the UK&rsquo;s competitive pastry scene.",
     featured: false,
   },
   {
@@ -49,12 +49,11 @@ const awards: AwardProps[] = [
     description:
       "Second place for an intricate chocolate sculpture inspired by Nepalese architecture and cultural motifs.",
     featured: true,
-    image: "/images/awards/award3.png",
+    icon: "crown",
   },
 ]
 
 export function Awards() {
-  // Rest of the component remains the same
   const featuredAwards = awards.filter((award) => award.featured)
   const otherAwards = awards.filter((award) => !award.featured)
 
@@ -69,10 +68,14 @@ export function Awards() {
               </div>
             </div>
             <div className="flex items-center gap-3 mb-4">
-              {award.image ? (
-                <img src={award.image || "/placeholder.svg"} alt={award.title} className="h-12 w-12 object-contain" />
+              {award.icon === "trophy" ? (
+                <Trophy className="h-12 w-12 text-amber-600" />
+              ) : award.icon === "medal" ? (
+                <Medal className="h-12 w-12 text-amber-600" />
+              ) : award.icon === "crown" ? (
+                <Crown className="h-12 w-12 text-amber-600" />
               ) : (
-                <Award className="h-8 w-8 text-amber-600" />
+                <Award className="h-12 w-12 text-amber-600" />
               )}
               <div>
                 <h3 className="font-bold text-xl">{award.title}</h3>
