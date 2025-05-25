@@ -10,7 +10,7 @@ const testimonials = [
     content:
       "Working with Narayan has been an incredible journey. His creativity, precision, and deep understanding of flavors were instrumental in our victory. His ability to blend traditional Nepalese elements with modern techniques is truly remarkable.",
     rating: 5,
-    image: "/placeholder.svg?height=100&width=100",
+    image: "/images/testimonials/person1.png",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const testimonials = [
     content:
       "Chef Narayan created the most exquisite dessert table for our corporate gala. His pastries were not only visually stunning but offered unique flavor combinations that our guests are still talking about months later.",
     rating: 5,
-    image: "/placeholder.svg?height=100&width=100",
+    image: "/images/testimonials/person2.png",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const testimonials = [
     content:
       "Taking a pastry masterclass with Chef Narayan was an eye-opening experience. He has a gift for teaching complex techniques in an approachable way, and his passion for pastry is truly infectious.",
     rating: 5,
-    image: "/placeholder.svg?height=100&width=100",
+    image: "/images/testimonials/person3.png",
   },
 ]
 
