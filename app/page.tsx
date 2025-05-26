@@ -241,7 +241,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 mb-1">Phone</p>
-                    <p className="font-medium">(+44) 123-456-7890</p>
+                    <p className="font-medium">+44 7442 405725</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -250,7 +250,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 mb-1">Email</p>
-                    <p className="font-medium">chef@narayanshrestha.com</p>
+                    <p className="font-medium">contact@chefnarayanshrestha.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">

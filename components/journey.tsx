@@ -58,7 +58,7 @@ export function Journey() {
               <div className="bg-amber-50 p-6 rounded-lg shadow-md border-r-4 border-amber-400 relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 bg-amber-50 rotate-45 border-l border-b border-amber-200"></div>
                 <span className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-sm font-medium mb-3">
-                  2016 - 2019
+                  2016 - 2018
                 </span>
                 <h3 className="text-2xl font-bold mb-3">Expanding in Qatar</h3>
                 <div className="flex items-center gap-2 text-gray-600 mb-4">
@@ -79,16 +79,16 @@ export function Journey() {
               <div className="bg-amber-50 p-6 rounded-lg shadow-md border-l-4 border-amber-400 relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <div className="absolute -right-3 top-1/2 transform -translate-y-1/2 w-6 h-6 bg-amber-50 rotate-45 border-r border-t border-amber-200"></div>
                 <span className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-sm font-medium mb-3">
-                  2019 - Present
+                  2018 - 2023
                 </span>
-                <h3 className="text-2xl font-bold mb-3">Excellence in London</h3>
+                <h3 className="text-2xl font-bold mb-3">Mastering in Abu Dhabi</h3>
                 <div className="flex items-center justify-end gap-2 text-gray-600 mb-4">
-                  <span className="font-medium">Intercontinental London – The O2, UK</span>
+                  <span className="font-medium">Four Seasons Hotel, Abu Dhabi, UAE</span>
                   <MapPin className="h-4 w-4 text-amber-600" />
                 </div>
                 <p className="text-gray-700 leading-relaxed">
-                  Continued to develop my craft at a prestigious London hotel, culminating in winning the Great British
-                  Bake Off: The Professionals 2024 with teammate Tanuj Sharma.
+                  Advanced my expertise in luxury pastry arts, developing signature desserts and leading pastry
+                  operations in one of Abu Dhabi&rsquo;s premier hospitality establishments.
                 </p>
               </div>
             </div>
@@ -104,32 +104,52 @@ export function Journey() {
             <div className="w-1/2 pl-12"></div>
           </div>
 
-          {/* Item 4 - Right side (Achievement) */}
+          {/* Item 4 - Right side */}
           <div className="relative flex items-center">
             <div className="w-1/2 pr-12"></div>
 
-            {/* Special trophy marker with animation */}
+            {/* Timeline marker with animation */}
             <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full border-4 border-white shadow-lg z-10 flex items-center justify-center relative">
-                <Trophy className="h-6 w-6 text-white" />
-                <div className="absolute w-full h-full rounded-full bg-amber-400 animate-ping opacity-30"></div>
+              <div className="w-10 h-10 bg-amber-500 rounded-full border-4 border-white shadow-lg z-10 flex items-center justify-center">
+                <ChefHat className="h-5 w-5 text-white" />
               </div>
-              <div className="absolute w-16 h-0.5 bg-amber-300 right-12 top-1/2 transform -translate-y-1/2"></div>
+              <div className="absolute w-16 h-0.5 bg-amber-300 right-10 top-1/2 transform -translate-y-1/2"></div>
             </div>
 
             <div className="w-1/2 pl-12">
-              <div className="bg-gradient-to-r from-amber-50 to-amber-100 p-6 rounded-lg shadow-md border-r-4 border-amber-500 relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              <div className="bg-amber-50 p-6 rounded-lg shadow-md border-r-4 border-amber-400 relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 bg-amber-50 rotate-45 border-l border-b border-amber-200"></div>
-                <div className="absolute top-0 right-0 -mt-2 -mr-2">
+                <span className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-sm font-medium mb-3">
+                  2023 - Present
+                </span>
+                <h3 className="text-2xl font-bold mb-3">Excellence in London</h3>
+                <div className="flex items-center gap-2 text-gray-600 mb-4">
+                  <MapPin className="h-4 w-4 text-amber-600" />
+                  <span className="font-medium">Intercontinental London – The O2, UK</span>
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  Continued to develop my craft at a prestigious London hotel, culminating in winning the Great British
+                  Bake Off: The Professionals 2024 with teammate Tanuj Sharma.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Item 5 - Left side (Achievement) */}
+          <div className="relative flex items-center">
+            <div className="w-1/2 pr-12 text-right">
+              <div className="bg-gradient-to-r from-amber-50 to-amber-100 p-6 rounded-lg shadow-md border-l-4 border-amber-500 relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                <div className="absolute -right-3 top-1/2 transform -translate-y-1/2 w-6 h-6 bg-amber-50 rotate-45 border-r border-t border-amber-200"></div>
+                <div className="absolute top-0 left-0 -mt-2 -ml-2">
                   <Award className="h-8 w-8 text-amber-500 drop-shadow-md" />
                 </div>
                 <span className="inline-block px-3 py-1 bg-amber-200 text-amber-800 rounded-full text-sm font-medium mb-3">
                   2024
                 </span>
                 <h3 className="text-2xl font-bold mb-3">Historic Victory</h3>
-                <div className="flex items-center gap-2 text-gray-700 mb-4">
-                  <Trophy className="h-5 w-5 text-amber-600" />
+                <div className="flex items-center justify-end gap-2 text-gray-700 mb-4">
                   <span className="font-medium">Great British Bake Off: The Professionals</span>
+                  <Trophy className="h-5 w-5 text-amber-600" />
                 </div>
                 <p className="text-gray-700 leading-relaxed">
                   Made history as part of the first South Asian team to win this globally renowned competition, bringing
@@ -137,6 +157,17 @@ export function Journey() {
                 </p>
               </div>
             </div>
+
+            {/* Special trophy marker with animation */}
+            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full border-4 border-white shadow-lg z-10 flex items-center justify-center relative">
+                <Trophy className="h-6 w-6 text-white" />
+                <div className="absolute w-full h-full rounded-full bg-amber-400 animate-ping opacity-30"></div>
+              </div>
+              <div className="absolute w-16 h-0.5 bg-amber-300 left-12 top-1/2 transform -translate-y-1/2"></div>
+            </div>
+
+            <div className="w-1/2 pl-12"></div>
           </div>
         </div>
       </div>
@@ -155,7 +186,7 @@ export function Journey() {
             icon: ChefHat,
           },
           {
-            year: "2016 - 2019",
+            year: "2016 - 2018",
             title: "Expanding in Qatar",
             location: "Four Seasons Hotel, Doha, Qatar",
             description:
@@ -163,7 +194,15 @@ export function Journey() {
             icon: ChefHat,
           },
           {
-            year: "2019 - Present",
+            year: "2018 - 2023",
+            title: "Mastering in Abu Dhabi",
+            location: "Four Seasons Hotel, Abu Dhabi, UAE",
+            description:
+              "Advanced my expertise in luxury pastry arts, developing signature desserts and leading pastry operations in one of Abu Dhabi's premier hospitality establishments.",
+            icon: ChefHat,
+          },
+          {
+            year: "2023 - Present",
             title: "Excellence in London",
             location: "Intercontinental London – The O2, UK",
             description:

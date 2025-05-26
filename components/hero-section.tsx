@@ -23,7 +23,7 @@ export function HeroSection() {
         </div>
         <h1 className="text-4xl md:text-7xl font-bold tracking-tight text-white mb-4">Chef Narayan Shrestha</h1>
         <p className="text-xl md:text-2xl text-white/90 max-w-[700px] mb-10">
-          Award-winning pastry chef and winner of Great British Bake Off: The Professionals 2024
+          Award-winning Nepalese pastry chef and winner of Great British Bake Off: The Professionals 2024
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button asChild size="lg" className="rounded-full bg-amber-500 hover:bg-amber-600 text-white">
